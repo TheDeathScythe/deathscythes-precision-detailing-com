@@ -15,14 +15,8 @@
 	$phone_num = "";
 	$errors = array();
 
-	//database variables
-	$dbhost = "db5005444714.hosting-data.io";
-	$dbuser = "dbu1348853";
-	$dbpassword = "$Popcheese10";
-	$dbdatabase = "dbs4573237";
-
 	//connect to database
-	$db = mysqli_connect($dbhost, $dbuser, $dbpassword, $dbdatabase);
+	$db = mysqli_connect('db5005444714.hosting-data.io', 'dbu1348853', '$Popcheese10', 'dbs4573237');
 
 	if($db == false)
 	{
