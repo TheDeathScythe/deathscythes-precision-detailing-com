@@ -113,7 +113,6 @@
   }
 
   </style>
-
   <!--Desktop Version-->
   <div class="container" style="display: flex; justify-content: center;">
     <form class="w-50 d-none d-lg-block" style="background: #FFF; border-radius: 5px; padding: 10px; margin-top: 10px; text-align: center;" method="POST">

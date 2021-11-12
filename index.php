@@ -75,7 +75,7 @@
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               <?php echo "$loggedIn_Username"; ?>
             </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <ul class="dropdown-menu dropdown-menu-right" style="right:25%;left:-25%;" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="account">Account</a></li>
               <li><a class="dropdown-item" href="appointments">Appointments</a></li>
               <li><hr class="dropdown-divider"></li>
@@ -160,7 +160,7 @@
   <!--Mobile Version-->
   <div class="container" style="display: flex; justify-content: center;">
     <div class="w-100 d-sm-none" style="background: #FFF; border-radius: 5px; margin-top: 10px; margin-bottom: 10px; padding: 15px; text-align: center;">
-      <h4>Our login system and our booking system is currently a work in progress. That being said, you can still go to the contact us page to inquire about availability and book appointments. You can also email me personally at <a href = "mailto: deathscythe@scythesprecisiondetailing.com">deathscythe@scythesprecisiondetailing.com</a> We are open 11-6 on weekdays and 11-3 on Saturdays. If possible please state the service you would like and what city you are located in so we can be prepared. Please note that if your car is exceptionally dirty you will need to inform us of this and have a hose that we can use for a pressure washer as we do not have onboard water. Our details can take a while, please refer to our services page to see estimated times and details on what exactly we do for each package. We hope you make an appointment and sincerely hope you are pleased with the quality of the detail. We will get your car as clean as we can (in the areas cleaned by the package of your choice of course) and we guaruntee for those esteemed members who get our premium detail, that the car will look exactly the way it did the first day on the lot. &#128077</h4>
+      <h4>Our login system and our booking system is currently a work in progress. That being said, you can still go to the contact us page to inquire about availability and book appointments. You can also email me personally at <a style="font-size:.75em;" href = "mailto: deathscythe@scythesprecisiondetailing.com">deathscythe@scythesprecisiondetailing.com</a> We are open 11-6 on weekdays and 11-3 on Saturdays. If possible please state the service you would like and what city you are located in so we can be prepared. Please note that if your car is exceptionally dirty you will need to inform us of this and have a hose that we can use for a pressure washer as we do not have onboard water. Our details can take a while, please refer to our services page to see estimated times and details on what exactly we do for each package. We hope you make an appointment and sincerely hope you are pleased with the quality of the detail. We will get your car as clean as we can (in the areas cleaned by the package of your choice of course) and we guaruntee for those esteemed members who get our premium detail, that the car will look exactly the way it did the first day on the lot. &#128077</h4>
     </div>
   </div>
 

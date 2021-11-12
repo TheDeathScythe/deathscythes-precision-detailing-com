@@ -111,11 +111,11 @@
       $pass2 = $row['Password'];
       $passwordver = password_verify($password, $pass2);
 
-      if((mysqli_num_rows($results) == 1) && $passwordver)
+      if($query && $passwordver)
       {
         $_SESSION['username'] = $username;
         $_SESSION['success'] = "You are now logged in";
-        if(isset($rememberme))
+        if(!isset($rememberme))
         {
           //generate auth cookie for remembering user after session is destroyed
           $user_id = $row['UID'];
@@ -135,7 +135,7 @@
             $hashedValidator = hash('sha256', $validator);
 
             $query3 = $db->prepare("INSERT INTO auth_tokens (selector, hashedValidator, UID, expires) VALUES (?, ?, ?, ?)");
-            $query3->bind_param($selector, $hashedValidator, $user_id, $expires);
+            $query3->bind_param("ssis", $selector, $hashedValidator, $user_id, $expires);
             $query3->execute();
             $cookie = $selector.$validator;
             setcookie("user_auth", $cookie, $expire);
@@ -146,6 +146,7 @@
             array_push($errors, "Oops, something went wrong!");
           }
         }
+        header('location: /thank-you?action=login');
       }
       else
       {
