@@ -111,7 +111,7 @@
       $pass2 = $row['Password'];
       $passwordver = password_verify($password, $pass2);
 
-      if(mysqli_num_rows($results) == 1 && $passwordver)
+      if((mysqli_num_rows($results) == 1) && $passwordver)
       {
         $_SESSION['username'] = $username;
         $_SESSION['success'] = "You are now logged in";
